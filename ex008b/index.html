@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+          <meta charset="UTF-8">
+          <meta name="overview"content="width=device-width,initial scale=1.0">
+          <title>Outras formatações</title>
+    </head>
+    <body>
+          <h1>Outras formatações</h1>
+
+          <h2>Código-fonte / Pré-formatação</h2>
+
+          <p>Para indicar ao navegador que o que estamos escrevendo é de fato um código-fonte, usamos a tag <strong><mark>&lt;code&gt;</mark></strong>, porém, ele passa a ser um código, mas não um código organizado ou melhor dizendo, um código <ins>pré-formatado</ins>.</p>
+
+          <p>Para definir a pré-formatação do código-fonte, mesclamos a tag 
+          <strong><mark>&lt;code&gt</mark>;</strong> com a tag <strong><mark>&lt;pre&gt;</mark></strong> , a união dessas duas tags gerará um código organizado ;)      
+          </p>
+
+          <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.
+          </p>
+
+
+          
+          <p> <code><pre>
+             import java.util.scanner;
+             import java.Arrays.*;
+             
+             public class Teste{
+
+                  public static void main(String[]args){
+                         Scanner sc = new Scanner(System.in);
+                         int x;
+                         int y;
+
+                         System.out.print("Informe um número: ");
+                         x = sc.nextInt();
+                         System.out.print("Informe um número para y: ");
+                         y = sc.nextInt();
+
+                         System.out.println();
+                         System.out.println("O resultado da potenciação entre"+x+" e "+y+" = "+Math.pow(x,y));
+
+
+                         sc.close();
+                  
+                        
+                  }
+             }
+          </p></code></pre>
+
+          <h2>Citações simples</h2>
+
+          <p>
+                Para isso, usamos a tag <strong><mark>&lt;q&gt;</mark></strong> .
+          </p>
+
+          <p>
+                Como diria o pai de um amigo: <q><em><strong><ins>o computador é um burro muito rápido</ins></strong></em></q> </p>
+
+          <h2>Citações completas</h2>
+
+          <p>
+              Para isso, usamos a tag <strong><mark>&lt;blockquote&gt</mark></strong> e o parâmetro <em><strong><mark>cite</mark></strong></em> se quisermos adicionar o endereçamento da fonte de informação.
+            </p>    
+
+           <p>   
+              Segundo Jeff Noble, no seu livro HTML para Leigos:  
+              <blockquote cite="https://www.livelo.com.br/livro-html-xhtml-e-css-para-leigos-7%C2%AA-edi%C3%A7%C3%A3o-2014-ed-tittel-e-jeff-noble/produto/LVL718207">
+              A diferença entre os  elementos inline e um  bloco de texto é  importante. Os elementos  HTML neste capítulo  descrevem os blocos de  texto.
+                    
+              </blockquote>
+          </p>
+
+          <h2>Abreviações</h2>
+
+          <p>Para isso, utilizamos a tag <mark>&lt;abbr&gt;</mark> junto do parâmetro <em><strong>title</strong></em> que irá receber o significado da palavra abreviada.</p>
+          
+          <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!
+          </p>
+
+          <h2>Texto Invertido</h2>
+
+          <p>
+                Para isso, usamos a tag <strong>&lt;bdo&gt;</strong> seguido do parâmetro <em><strong>dir</strong></em>(direção).
+          </p>
+
+          <p>
+              <bdo dir="rtl"><mark>Estou aprendendo a criar coisas em HTML.</mark></bdo> .    
+          </p>    
+
+    </body>
+</html>

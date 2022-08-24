@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="" method="post">
+        <div>
+            <label for="iano">Em que ano voce nasceu: </label>
+            <input type="number" id="ano" max="2022"
+            oninput="iidade.innerHTML = calcIdade(ano.value)">
+        </div>
+        <br>
+        <div>
+            <label for="iidade">Idade: </label>
+            <output id="iidade">0</output>
+        </div>
+    </form>
+    <script>
+        function calcIdade(ano){
+            return new Date().getFullYear() - ano;
+        }
+    </script>
+</body>
+</html>

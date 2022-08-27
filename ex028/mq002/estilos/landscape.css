@@ -1,0 +1,7 @@
+body {
+    background-color: darkcyan;
+    background: url(../images/cev-portrait.jpg)
+    #233eff no-repeat;
+   background-size: contain;
+   background-position: left bottom; 
+}
